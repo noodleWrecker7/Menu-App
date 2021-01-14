@@ -3,7 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+<description>This is just a school project, the main challenge was supposed to be making the UI, but it turns out compiling a jar with jfx 11+ doesnt
+really work well at all, at least with intellij, so I'm using maven to build the "fat" jar and include all the dependencies in the archive</description>
+    <url>https://noodlewrecker.me</url>
     <groupId>groupId</groupId>
     <artifactId>Array-Menu-App</artifactId>
     <packaging>jar</packaging>
@@ -58,6 +60,16 @@
                 <configuration>
                     <release>${maven.compiler.release}</release>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>3.0.0</version>
             </plugin>
         </plugins>
     </build>

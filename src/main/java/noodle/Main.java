@@ -30,7 +30,7 @@ public class Main extends Application {
         ScreenController.activate("menu");
 
 
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Menu App");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
