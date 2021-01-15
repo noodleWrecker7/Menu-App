@@ -36,6 +36,7 @@ public class Main extends Application {
 
         ScreenController.addScreen("dupes", new FXMLLoader().load(classloader.getResourceAsStream("dupes.fxml")));
         ScreenController.addScreen("evenodd", new FXMLLoader().load(classloader.getResourceAsStream("evenodd.fxml")));
+        ScreenController.addScreen("position", new FXMLLoader().load(classloader.getResourceAsStream("position.fxml")));
 
         ScreenController.activate("menu");
 

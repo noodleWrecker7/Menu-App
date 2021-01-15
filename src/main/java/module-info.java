@@ -3,9 +3,12 @@ module Array.Menu.App {
     requires javafx.graphics;
     requires javafx.controls;
     requires javafx.fxml;
-//    requires javafx.graphics;
+
     opens noodle;
+    exports noodle;
+
     opens noodle.arrayaverage;
+    exports noodle.arrayaverage;
 
     opens noodle.search;
     exports noodle.search;
@@ -18,4 +21,7 @@ module Array.Menu.App {
 
     opens noodle.evenodd;
     exports noodle.evenodd;
+
+    opens noodle.position;
+    exports noodle.position;
 }

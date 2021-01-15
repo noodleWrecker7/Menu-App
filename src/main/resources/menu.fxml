@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.effect.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<Pane styleClass="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" stylesheets="styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="noodle.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" styleClass="pane" stylesheets="styles.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="noodle.Controller">
    <children>
       <HBox alignment="CENTER" prefHeight="350.0" prefWidth="350.0">
          <children>
@@ -15,10 +13,9 @@
                <children>
                   <Button id="array average" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Average" />
                   <Button id="search" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Search" />
-                  <Button id="menu" disable="true" layoutX="10.0" layoutY="167.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Add num at index" />
+                  <Button id="position" layoutX="10.0" layoutY="167.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Add num at index" />
                   <Button id="min-max" layoutX="10.0" layoutY="184.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Find min / max" />
-                  <Button id="dupes"  layoutX="10.0" layoutY="202.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Find dupes (+ remove option)" />
-                  <Button id="menu" disable="true" layoutX="10.0" layoutY="219.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Find common elements" />
+                  <Button id="dupes" layoutX="10.0" layoutY="202.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Find dupes (+ remove option)" />
                   <Button id="evenodd" layoutX="10.0" layoutY="237.0" mnemonicParsing="false" onMousePressed="#menuClicked" prefHeight="25.0" prefWidth="210.0" text="Even / odd" />
                </children>
             </VBox>
