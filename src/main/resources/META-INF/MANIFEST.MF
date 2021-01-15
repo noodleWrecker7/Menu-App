@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: noodle.Supermain
+Main-Class: adam.Supermain
 Class-Path: src/main/resources

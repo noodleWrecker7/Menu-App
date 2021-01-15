@@ -31,7 +31,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>noodle.Supermain</mainClass>
+                                    <mainClass>adam.Supermain</mainClass>
                                 </transformer>
                             </transformers>
 
@@ -52,7 +52,7 @@
                         <manifestEntries>
                             <mode>development</mode>
                             <url>${project.url}</url>
-                            <Main-Class>noodle.Supermain</Main-Class>
+                            <Main-Class>adam.Supermain</Main-Class>
                         </manifestEntries>
                     </archive>
                 </configuration>

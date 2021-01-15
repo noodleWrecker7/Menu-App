@@ -1,4 +1,4 @@
-package noodle;
+package adam;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

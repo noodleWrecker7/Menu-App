@@ -1,17 +1,17 @@
-package noodle.position;
+package adam.position;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import noodle.Main;
-import noodle.ScreenController;
+import adam.Main;
+import adam.ScreenController;
 
 public class Controller {
 
     @FXML
     private void remove(MouseEvent event) {
-        noodle.Controller.removeFromArray();
+        adam.Controller.removeFromArray();
     }
 
     @FXML
@@ -33,12 +33,12 @@ public class Controller {
             ((TextField) ScreenController.getCurrentScene().lookup("#input-field")).clear();
         } catch (Exception e) {
         }
-        noodle.Controller.updateArrayDisplay();
+        adam.Controller.updateArrayDisplay();
     }
 
 
     @FXML
     private void menuClicked(MouseEvent event) {
-        noodle.Controller.goToPage(((Button) event.getSource()).getId());
+        adam.Controller.goToPage(((Button) event.getSource()).getId());
     }
 }

@@ -4,24 +4,24 @@ module Array.Menu.App {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens noodle;
-    exports noodle;
+    opens adam;
+    exports adam;
 
-    opens noodle.arrayaverage;
-    exports noodle.arrayaverage;
+    opens adam.arrayaverage;
+    exports adam.arrayaverage;
 
-    opens noodle.search;
-    exports noodle.search;
+    opens adam.search;
+    exports adam.search;
 
-    opens noodle.minmax;
-    exports noodle.minmax;
+    opens adam.minmax;
+    exports adam.minmax;
 
-    opens noodle.dupes;
-    exports noodle.dupes;
+    opens adam.dupes;
+    exports adam.dupes;
 
-    opens noodle.evenodd;
-    exports noodle.evenodd;
+    opens adam.evenodd;
+    exports adam.evenodd;
 
-    opens noodle.position;
-    exports noodle.position;
+    opens adam.position;
+    exports adam.position;
 }

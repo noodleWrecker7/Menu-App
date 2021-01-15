@@ -1,11 +1,11 @@
-package noodle.arrayaverage;
+package adam.arrayaverage;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
-import noodle.Main;
-import noodle.ScreenController;
+import adam.Main;
+import adam.ScreenController;
 
 public class Controller {
 
@@ -23,19 +23,19 @@ public class Controller {
 
     @FXML
     private void remove(MouseEvent event) {
-        noodle.Controller.removeFromArray();
+        adam.Controller.removeFromArray();
         recalculateValues();
     }
 
     @FXML
     private void add(MouseEvent event) {
-        noodle.Controller.addToArray();
+        adam.Controller.addToArray();
         recalculateValues();
     }
 
 
     @FXML
     private void menuClicked(MouseEvent event) {
-        noodle.Controller.goToPage(((Button) event.getSource()).getId());
+        adam.Controller.goToPage(((Button) event.getSource()).getId());
     }
 }

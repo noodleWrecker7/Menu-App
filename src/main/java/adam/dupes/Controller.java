@@ -1,11 +1,11 @@
-package noodle.dupes;
+package adam.dupes;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
-import noodle.Main;
-import noodle.ScreenController;
+import adam.Main;
+import adam.ScreenController;
 
 import java.util.ArrayList;
 
@@ -28,13 +28,13 @@ public class Controller {
 
     @FXML
     private void remove() {
-        noodle.Controller.removeFromArray();
+        adam.Controller.removeFromArray();
         search();
     }
 
     @FXML
     private void add() {
-        noodle.Controller.addToArray();
+        adam.Controller.addToArray();
         search();
     }
 
@@ -42,12 +42,12 @@ public class Controller {
     private void deleteDupes() {
         search();
         Main.numbers = numsNoDupe;
-        noodle.Controller.updateArrayDisplay();
+        adam.Controller.updateArrayDisplay();
         search();
     }
 
     @FXML
     private void menuClicked(MouseEvent event) {
-        noodle.Controller.goToPage(((Button) event.getSource()).getId());
+        adam.Controller.goToPage(((Button) event.getSource()).getId());
     }
 }
