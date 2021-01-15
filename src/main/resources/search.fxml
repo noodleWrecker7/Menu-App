@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0" stylesheets="styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="noodle.search.Controller">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="350.0" prefWidth="350.0">
+            <children>
+                <HBox>
+                    <children>
+                        <Button id="menu" graphicTextGap="2.0" mnemonicParsing="false" onMousePressed="#menuClicked" text="&lt;-" textAlignment="CENTER">
+                            <font>
+                                <Font name="Calibri" size="12.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+                <VBox alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" prefHeight="303.0" prefWidth="258.0">
+                    <children>
+                        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="42.0" prefWidth="258.0" spacing="15.0">
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="52.0" text="Number:" />
+                                <TextField id="input-field" promptText="Enter a number..." />
+                            </children>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="258.0" spacing="10.0">
+                            <children>
+                                <Button mnemonicParsing="false" onMousePressed="#add" text="Add" />
+                                <Button mnemonicParsing="false" onMousePressed="#remove" text="Remove" />
+                            </children>
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <Label id="array-field" text="" />
+                        <Separator prefHeight="41.0" prefWidth="258.0" visible="false"/>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="42.0" prefWidth="258.0" spacing="15.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="103.0" text="Item to search for:" />
+                        <TextField id="search-field" prefHeight="25.0" prefWidth="104.0" promptText="Enter a number..." />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="350.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMousePressed="#search" text="Search" />
+                     </children>
+                  </HBox>
+                        <Text id="result" text="You haven't searched for anything yet" />
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+    </children>
+</Pane>

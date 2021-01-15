@@ -17,8 +17,12 @@ public class ScreenController {
         screenMap.put(name, pane);
     }
 
-    public static Pane getScene(String name) {
+    public static Pane getPane(String name) {
         return screenMap.get(name);
+    }
+
+    public static Scene getCurrentScene() {
+        return main;
     }
 
     protected static void removeScreen(String name) {

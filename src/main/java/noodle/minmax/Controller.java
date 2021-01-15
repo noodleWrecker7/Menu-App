@@ -1,6 +1,7 @@
-package noodle.arrayaverage;
+package noodle.minmax;
 
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -11,14 +12,17 @@ public class Controller {
 
     private void recalculateValues() {
         if(Main.numbers.size() == 0) return;
-        int total = 0;
+        int min = Main.numbers.get(0), max = min;
         for (int i = 0; i < Main.numbers.size(); i++) {
-            total += Main.numbers.get(i);
+            if (Main.numbers.get(i) < min) min = Main.numbers.get(i);
+            if (Main.numbers.get(i) > max) max = Main.numbers.get(i);
         }
 
-        float avg = (float) total / (float) Main.numbers.size();
-
-        ((Label) ScreenController.getPane("array average").lookup("#result")).setText(Float.toString(avg));
+        int range = max - min;
+        Scene scene = ScreenController.getCurrentScene();
+        ((Label) scene.lookup("#range-result")).setText(Integer.toString(range));
+        ((Label) scene.lookup("#min-result")).setText(Integer.toString(min));
+        ((Label) scene.lookup("#max-result")).setText(Integer.toString(max));
     }
 
     @FXML

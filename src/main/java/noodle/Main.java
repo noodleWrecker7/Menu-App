@@ -6,10 +6,12 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class Main extends Application {
+
+    public static ArrayList<Integer> numbers = new ArrayList<>();
 
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -27,6 +29,14 @@ public class Main extends Application {
 
         InputStream fxmlinputstream = classloader.getResourceAsStream("array average.fxml");
         ScreenController.addScreen("array average", new FXMLLoader().load(fxmlinputstream));
+
+        ScreenController.addScreen("search", new FXMLLoader().load(classloader.getResourceAsStream("search.fxml")));
+
+        ScreenController.addScreen("min-max", new FXMLLoader().load(classloader.getResourceAsStream("evenodd.fxml")));
+
+        ScreenController.addScreen("dupes", new FXMLLoader().load(classloader.getResourceAsStream("dupes.fxml")));
+        ScreenController.addScreen("evenodd", new FXMLLoader().load(classloader.getResourceAsStream("evenodd.fxml")));
+
         ScreenController.activate("menu");
 
 

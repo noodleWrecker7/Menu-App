@@ -6,5 +6,16 @@ module Array.Menu.App {
 //    requires javafx.graphics;
     opens noodle;
     opens noodle.arrayaverage;
-    exports noodle.arrayaverage;
+
+    opens noodle.search;
+    exports noodle.search;
+
+    opens noodle.minmax;
+    exports noodle.minmax;
+
+    opens noodle.dupes;
+    exports noodle.dupes;
+
+    opens noodle.evenodd;
+    exports noodle.evenodd;
 }

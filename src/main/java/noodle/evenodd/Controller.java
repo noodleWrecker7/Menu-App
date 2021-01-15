@@ -1,6 +1,7 @@
-package noodle.arrayaverage;
+package noodle.evenodd;
 
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -10,15 +11,16 @@ import noodle.ScreenController;
 public class Controller {
 
     private void recalculateValues() {
-        if(Main.numbers.size() == 0) return;
-        int total = 0;
+        int evenCount = 0;
+        int oddCount = 0;
         for (int i = 0; i < Main.numbers.size(); i++) {
-            total += Main.numbers.get(i);
+            if (Main.numbers.get(i) % 2 == 0) evenCount++;
+            else oddCount++;
         }
 
-        float avg = (float) total / (float) Main.numbers.size();
-
-        ((Label) ScreenController.getPane("array average").lookup("#result")).setText(Float.toString(avg));
+        Scene scene = ScreenController.getCurrentScene();
+        ((Label) scene.lookup("#odd-result")).setText(Integer.toString(oddCount));
+        ((Label) scene.lookup("#even-result")).setText(Integer.toString(evenCount));
     }
 
     @FXML
